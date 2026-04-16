@@ -37,9 +37,8 @@ public class Main {
 //            First f1 =session.find(First.class,103);
 //            session.remove(f1);  // remove
 
-            transaction.commit();
-
-
+        // commit nd close
+        transaction.commit();
         session.close();
         factory.close();
 
